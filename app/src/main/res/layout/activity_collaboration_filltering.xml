@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/wegoing_background">
+
+    <TextView
+        android:id="@+id/question_logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEGOING"
+        android:textColor="@color/wegoing"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="20dp"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/collaboration_base_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contents_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_logo_name"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/collaboration_base_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자연적인 여행자"
+        android:textColor="@color/wegoing2"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/collaboration_base_line"
+        app:layout_constraintTop_toBottomOf="@+id/question_logo_name"
+        android:paddingLeft="13dp"
+        android:paddingTop="37dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/collaboration_base_nameback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가 추천한 여행지"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/collaboration_base_name"
+        app:layout_constraintTop_toBottomOf="@+id/question_logo_name"
+        android:paddingTop="37dp"
+      >
+    </TextView>
+    <TextView
+        android:id="@+id/collaboration_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나와 같은 성향의 여행자가 추천해주는 여행지에요"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collaboration_base_name"
+        android:paddingLeft="35dp"
+        android:paddingTop="8dp">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collaboraion_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        tools:listitem="@layout/item_collaborative"
+        app:layout_constraintStart_toStartOf="parent"
+       android:paddingLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/collaboration_explain"
+        android:paddingTop="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/collaboration_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/collaboraion_rv">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/collaboration_base_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contents_line"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+     >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/collaboration_base_nameback2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나도 추천할 만한 여행지가 있나요?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/collaboration_base_line2"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        android:paddingLeft="18dp"
+        android:paddingTop="27dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/collaboration_explain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내가 경험한 여행지 중 좋았던 곳을 추천해주세요! "
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collaboration_base_nameback2"
+        android:paddingLeft="35dp"
+        android:paddingTop="8dp">
+    </TextView>
+
+  <EditText
+      android:id="@+id/collaboraion_edittext"
+      android:layout_width="300dp"
+      android:layout_height="50dp"
+      android:background="@drawable/edittext_background"
+      android:textSize="10dp"
+      android:hint="여행지를 입력해주세요"
+      android:padding="11dp"
+      app:layout_constraintTop_toBottomOf="@id/collaboration_explain2"
+      android:drawableEnd="@drawable/pencil"
+      android:layout_marginTop="40dp"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="20dp">
+  </EditText>
+
+    <TextView
+        android:id="@+id/collaboraion_send"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="입력 완료"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/collaboraion_edittext"
+        android:background="@drawable/send_background"
+        android:padding="8dp"
+        android:gravity="center"
+       android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="135dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/collaboraion_if"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="더 다양한 여행지를 추천 받고 싶다면"
+        app:layout_constraintTop_toBottomOf="@id/collaboraion_send"
+        android:layout_marginTop="80dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/collaboraion_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Click!"
+        app:layout_constraintTop_toBottomOf="@id/collaboraion_if">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/result_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="225dp"
+        app:layout_constraintTop_toBottomOf="@+id/collaboraion_if"
+        android:paddingTop="4dp"
+        >
+    </ImageView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/question_logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEGOING"
+        android:textColor="@color/wegoing"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="20dp"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/contents_travel_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="'제주도'"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="100dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/contents_travel_destination_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="와 비슷한 여행지에요"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/contents_travel_destination"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="100dp">
+    </TextView>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/contents_rv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="470dp"-->
+<!--        tools:listitem="@layout/item_contents"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/contents_travel_destination_back"-->
+<!--        android:layout_margin="13dp">-->
+
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+    <TextView
+        android:id="@+id/contents_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아마존"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contents_travel_destination_back"
+        android:padding="50dp">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/contents_star_plz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#B37F7F"
+        android:text="추천이 맘에 드셨다면 별표를 남겨주세요!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contents_tv">
+    </TextView>
+    <ImageButton
+        android:id="@+id/star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star2"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="140dp"
+        android:padding="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/contents_star_plz">
+
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star2"
+        android:background="@null"
+        android:padding="4dp"
+
+        app:layout_constraintStart_toEndOf="@+id/star1"
+        app:layout_constraintTop_toBottomOf="@+id/contents_star_plz">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star2"
+        android:background="@null"
+        android:padding="4dp"
+        app:layout_constraintStart_toEndOf="@+id/star2"
+        app:layout_constraintTop_toBottomOf="@+id/contents_star_plz">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/star4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star2"
+        android:background="@null"
+        android:padding="4dp"
+        app:layout_constraintStart_toEndOf="@+id/star3"
+        app:layout_constraintTop_toBottomOf="@+id/contents_star_plz">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/star5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star2"
+        android:background="@null"
+        android:padding="4dp"
+        app:layout_constraintStart_toEndOf="@+id/star4"
+        app:layout_constraintTop_toBottomOf="@+id/contents_star_plz">
+    </ImageButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

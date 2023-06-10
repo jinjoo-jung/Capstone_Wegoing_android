@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wegoing_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/question_logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEGOING"
+        android:textColor="@color/wegoing"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="20dp"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <TextView
+        android:id="@+id/question_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/wegoing"
+        android:text="Q1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="90dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/question_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/question_line1"
+        app:layout_constraintTop_toBottomOf="@+id/question_number1"
+        app:layout_constraintBottom_toTopOf="@+id/question_q1_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="10dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/question_q1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="멋진 풍경이 내 눈 앞에 펼쳐졌을 때 나는?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_line"
+        android:paddingTop="10dp">
+    </TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quesiton_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        tools:listitem="@layout/item_question"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/question_q1_title">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="이전"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:background="@drawable/front_background"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quesiton_rv"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:background="@drawable/front_background"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quesiton_rv"
+        android:layout_marginEnd="110dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

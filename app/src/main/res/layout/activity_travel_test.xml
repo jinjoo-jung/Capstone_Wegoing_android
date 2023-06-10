@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wegoing_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:id="@+id/main_logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEGOING"
+        android:textColor="@color/wegoing"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="20dp"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/main_logo_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/travelmain"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_logo_name"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/main_what_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:textColor="#B37F7F"
+        android:text="어떤 유형의 여행자인가요?"
+        app:layout_constraintTop_toBottomOf="@+id/main_logo_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/main_commend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="여행 성향 테스트를 통해 여행 스타일을 알아보고,\n          어울리는 여행지를 추천해드릴게요!"
+        app:layout_constraintTop_toBottomOf="@+id/main_what_travel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+    </TextView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/test_go"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/main_commend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"></ImageButton>
+
+    <TextView
+        android:id="@+id/test_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테스트 하러가기"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_commend"
+        android:layout_marginTop="45dp">
+
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
