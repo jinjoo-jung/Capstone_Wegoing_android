@@ -3,31 +3,31 @@ package com.example.wegoing
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
-import androidx.recyclerview.widget.RecyclerView
 import com.example.wegoing.databinding.ActivityQuestion1Binding
+import com.example.wegoing.databinding.ActivityQuestion6Binding
 
-class QuestionActivity:AppCompatActivity() {
-    private lateinit var binding: ActivityQuestion1Binding
+class Question6Activity : AppCompatActivity() {
+    private lateinit var binding: ActivityQuestion6Binding
 
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityQuestion1Binding.inflate(layoutInflater)
+        binding = ActivityQuestion6Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val intent = Intent(this, Question7Activity::class.java )
+        binding.next6.setOnClickListener{
+            startActivity(intent)
+        }
+
         val myDataset = listOf(
-            Question("당연히 풍경사진도, 내 인생샷도 열심히 찍어야지"),
-            Question("주변 사람한테 부탁해서 단체사진부터 찍고싶어"),
-            Question("함께 간 사람들의 사진을 찍어줄래"),
-            Question("사진을 찍기보다는 그 순간을 내 눈에 담고싶어")
+            Question("차나 오토바이로 자유로운 여행을 즐기는 것"),
+            Question("공공 교통을 이용해 현지인들과 함께 이동하는 것"),
+            Question("비행기로 멀리 떠나는 것"),
+            Question("자전거로 체력을 쑥쑥 키우는 것")
         )
         // ... 추가적인 질문 데이터
 

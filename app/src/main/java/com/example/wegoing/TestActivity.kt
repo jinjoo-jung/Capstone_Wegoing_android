@@ -21,7 +21,7 @@ class TestActivity :AppCompatActivity() {
         setContentView(binding.root)
 
         binding.testGo.setOnClickListener {
-        val intent = Intent(this,QuestionActivity::class.java)
+        val intent = Intent(this,Question1Activity::class.java)
             startActivity(intent)
         }
 

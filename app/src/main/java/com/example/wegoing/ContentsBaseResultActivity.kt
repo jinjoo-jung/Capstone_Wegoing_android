@@ -34,14 +34,16 @@ class ContentsBaseResultActivity:AppCompatActivity(),ContentsResultView {
             val jsonObject = jsonArray.getJSONObject(1) // Assuming you have a single object in the array
             val travelPastName = jsonObject.getString("travelPastName")
 
+            Log.d("resp",travelPastName)
             // Set the extracted value to your TextView
             binding.contentsTv.text = travelPastName
         }
 
+
 //        Log.d("travelPast", resp.toString())
 //        binding.contentsTv.text = resp.toString()
-    }
 
+    }
     override fun onContentsResultFailure() {
 
     }

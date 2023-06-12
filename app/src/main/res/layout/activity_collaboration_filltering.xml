@@ -127,7 +127,7 @@
         android:id="@+id/collaboration_explain2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="내가 경험한 여행지 중 좋았던 곳을 추천해주세요! "
+        android:text="나와 비슷한 성향의 사람들에게 여행지를 추천 해주세요"
         android:textSize="11dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/collaboration_base_nameback2"
@@ -175,7 +175,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="더 다양한 여행지를 추천 받고 싶다면"
+        android:text="성향과 상관없이 다른 여행지를 추천받고 싶나요?"
         app:layout_constraintTop_toBottomOf="@id/collaboraion_send"
         android:layout_marginTop="80dp">
 

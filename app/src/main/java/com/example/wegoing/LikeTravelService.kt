@@ -23,7 +23,7 @@ class LikeTravelService {
                     call: Call<LikeTravelResponse>,
                     response: Response<LikeTravelResponse>
                 ) {
-                    Log.d("SIGNUP/SUCCESS", response.toString())
+                    Log.d("LikeTravel/SUCCESS", LikeTravelResponse(response.toString()).toString())
 
                     if (response.isSuccessful) {
                         val resp: LikeTravelResponse? = response.body()
@@ -36,7 +36,7 @@ class LikeTravelService {
                 }
 
                 override fun onFailure(call: Call<LikeTravelResponse>, t: Throwable) {
-                    Log.e("SIGNUP/FAILURE", t.message.toString())
+                    Log.e("LikeTravel/FAILURE", t.message.toString())
 
                 }
             })

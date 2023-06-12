@@ -24,12 +24,15 @@ class ContentsResultService {
     fun getContentsResult() {
         val contentsResultService = getRetrofit().create(ContentsResultRetrofitInterface::class.java)
             contentsResultService.LikeTravelResult().enqueue(object: Callback<LikeTravelResponse> {
+
                 override fun onResponse(
+
                     call: Call<LikeTravelResponse>,
                     response: Response<LikeTravelResponse>
                 ) {
                     Log.d("SIGNUP/SUCCESS", response.toString())
                     if (response.isSuccessful) {
+
                         val resp: LikeTravelResponse? = response.body()
                         if (resp != null) {
                             contentsResultView.onContentsResultSuccess(resp)
@@ -46,15 +49,3 @@ class ContentsResultService {
         })
     }
 }
-//                when(resp.code) {
-//                    1000 ->  signUpView.onSignUpSuccess()
-//                    else -> signUpView.onSignUpFailure()
-//                }
-//            }
-//
-//            override fun onFailure(call: Call<AuthResponse>, t: Throwable) {
-//                Log.d("SIGNUP/FAILURE", t.message.toString())
-//            }
-//        })
-//    }
-//}
