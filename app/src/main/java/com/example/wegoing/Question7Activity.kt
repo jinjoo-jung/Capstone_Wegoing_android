@@ -18,16 +18,16 @@ class Question7Activity : AppCompatActivity() {
         binding = ActivityQuestion7Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val intent = Intent(this, ResultActivity::class.java )
+        val intent = Intent(this, Question8Activity::class.java )
         binding.next7.setOnClickListener{
             startActivity(intent)
         }
 
         val myDataset = listOf(
-            Question("차나 오토바이로 자유로운 여행을 즐기는 것"),
-            Question("공공 교통을 이용해 현지인들과 함께 이동하는 것"),
-            Question("비행기로 멀리 떠나는 것"),
-            Question("자전거로 체력을 쑥쑥 키우는 것")
+            Question("호텔이나 리조트와 같은 고급스러운 숙박 시설을 선호하는 것"),
+            Question("로컬 펜션과 같은 복잡한 분위기의 숙박 시설을 선호하는 것"),
+            Question("에어비앤비와 같은 로컬 렌탈 하우스를 선호하는 것"),
+            Question("캠핑이나 카라반 같은 아웃도어 숙박 시설을 선호하는 것")
         )
         // ... 추가적인 질문 데이터
 

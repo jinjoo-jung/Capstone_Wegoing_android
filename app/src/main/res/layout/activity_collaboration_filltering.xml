@@ -70,18 +70,35 @@
         android:paddingTop="8dp">
     </TextView>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/collaboraion_rv"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        tools:listitem="@layout/item_collaborative"
-        app:layout_constraintStart_toStartOf="parent"
-       android:paddingLeft="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/collaboration_explain"
-        android:paddingTop="10dp"
-        >
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/collaboraion_rv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:paddingLeft="30dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/collaboration_explain"-->
+<!--        tools:listitem="@layout/item_collaborative">-->
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
 
-    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뉴질랜드"
+        android:textSize="13dp"
+        android:width="300dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/collaboration_explain"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/recommendation_back"
+        android:drawableEnd="@drawable/like"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
 
     <ImageView
         android:id="@+id/line"
@@ -90,7 +107,8 @@
         android:src="@drawable/collaboration_line"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/collaboraion_rv">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="350dp">
 
     </ImageView>
 
@@ -177,7 +195,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="성향과 상관없이 다른 여행지를 추천받고 싶나요?"
         app:layout_constraintTop_toBottomOf="@id/collaboraion_send"
-        android:layout_marginTop="80dp">
+        android:layout_marginTop="70dp">
 
     </TextView>
 

@@ -30,7 +30,12 @@ class ContentsBasedActivity:AppCompatActivity(),LikeTravelView {
 //            intent.putExtra("EditText", likeTravel)
 //            startActivity(intent)
 
+
+
+
         binding.contentsSend.setOnClickListener {
+            Toast.makeText(applicationContext, "여행지가 입력되었습니다", Toast.LENGTH_SHORT).show()
+
             val data = binding.contentsEdittext.text.toString()
 
             // LikeTravel 객체 생성
@@ -41,6 +46,7 @@ class ContentsBasedActivity:AppCompatActivity(),LikeTravelView {
             val likeTravelService = LikeTravelService()
             likeTravelService.setLikeTravelView(this)
             likeTravelService.likeTravel(likeTravel)
+
         }
          binding.contentsResultGo.setOnClickListener{
              val intent =Intent(this, ContentsBaseResultActivity::class.java)

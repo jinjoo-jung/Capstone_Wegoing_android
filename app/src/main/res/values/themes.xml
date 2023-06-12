@@ -15,4 +15,9 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateTint">@color/wegoing</item>
+    </style>
+
 </resources>

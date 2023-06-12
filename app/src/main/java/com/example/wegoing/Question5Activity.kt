@@ -25,10 +25,10 @@ class Question5Activity : AppCompatActivity() {
         }
 
         val myDataset = listOf(
-            Question("차나 오토바이로 자유로운 여행을 즐기는 것"),
-            Question("공공 교통을 이용해 현지인들과 함께 이동하는 것"),
-            Question("비행기로 멀리 떠나는 것"),
-            Question("자전거로 체력을 쑥쑥 키우는 것")
+            Question("봄의 꽃길을 걸으며 청량한 공기를 마시는 것"),
+            Question("여름 바다와 해수욕을 즐기고 캠핑을 하는 것"),
+            Question("가을의 단풍구경과 포근한 온천을 즐기는 것"),
+            Question("겨울의 스키장에서 눈썰매를 타는 것")
         )
         // ... 추가적인 질문 데이터
 

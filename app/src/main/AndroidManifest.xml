@@ -26,10 +26,7 @@
 
         <activity android:name=".Question1Activity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity android:name=".Question2Activity"></activity>
         <activity android:name=".Question3Activity"></activity>
@@ -37,15 +34,19 @@
         <activity android:name=".Question5Activity"></activity>
         <activity android:name=".Question6Activity"></activity>
         <activity android:name=".Question7Activity"></activity>
+        <activity android:name=".Question8Activity"></activity>
 
         <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".LoadingActivity"></activity>
 
 
 
         <activity android:name=".TestActivity"
             android:exported="true">
-
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".ContentsBasedActivity"
             android:exported="true">

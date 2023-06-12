@@ -23,10 +23,10 @@ class Question3Activity : AppCompatActivity() {
             startActivity(intent)
         }
         val myDataset = listOf(
-            Question("차나 오토바이로 자유로운 여행을 즐기는 것"),
-            Question("공공 교통을 이용해 현지인들과 함께 이동하는 것"),
-            Question("비행기로 멀리 떠나는 것"),
-            Question("자전거로 체력을 쑥쑥 키우는 것")
+            Question("현지 먹거리와 음식 문화를 체험하는 것"),
+            Question("미리 알고 있는 음식을 먹는 것"),
+            Question("특별한 식사 경험 (미술관 내 레스토랑, 뷔페 등)"),
+            Question("빠른 식사 (패스트푸드, 패스트캐주얼 등)")
         )
         // ... 추가적인 질문 데이터
 
